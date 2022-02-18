@@ -13,13 +13,20 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: rgb(181, 176, 228);
+            background-color: rgb(195, 189, 241);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(77, 48, 94);
         }
 
        td, th {
@@ -33,7 +40,8 @@
        }
 
        thead, tfoot {
-           background-color:rgb(245, 212, 223);
+           background-color:rgb(77, 48, 94);
+           color: rgb(233, 232, 247);
        }
 
        tbody > tr:nth-child(odd) { /* 2n-1 */
